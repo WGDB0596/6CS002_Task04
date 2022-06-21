@@ -19,7 +19,7 @@ public class reflection_7 {
     for (Field f : fields) {
       f.setAccessible(true);
       System.out.printf("field name=%s type=%s value=%d\n", f.getName(),
-        f.getType(), f.getDouble(s));
+        f.getType(), f.getFloat(s));
     }
     
   }

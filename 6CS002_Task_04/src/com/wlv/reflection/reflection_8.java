@@ -10,13 +10,15 @@ public class reflection_8 {
     System.out.printf("There are %d fields\n", fields.length);
     for(Field f : fields) {
       f.setAccessible(true);
-      double x = f.getDouble(s);
+      double x = f.getFloat(s);
       x++;
-      f.setDouble(s, x);
+      f.setFloat(s, (float) x);
       System.out.printf("field name=%s type=%s value=%d\n", 
-          f.getName(), f.getType(), f.getDouble(s));
+          f.getName(), f.getType(), f.getFloat(s));
           
     }
   }
 
 }
+
+

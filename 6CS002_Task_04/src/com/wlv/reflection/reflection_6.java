@@ -3,10 +3,8 @@ package com.wlv.reflection;
 import java.lang.reflect.Field;
 
 /*
- * The accessibility flags for both the public and private member are set to
- * false
+ * The accessibility for both the public and private member are set to false
  */
-
 public class reflection_6 {
 
   public static void main(String[] args) throws Exception{
@@ -23,3 +21,5 @@ public class reflection_6 {
       
   }
 }
+
+

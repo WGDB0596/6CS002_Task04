@@ -2,13 +2,13 @@ package com.wlv.reflection;
 
 public class Simple {
 
-  public double a =  16.25;
-  public double b = 25.75;
+  public float a =  (float) 16.25;
+  public float b = (float) 25.75;
   
   public Simple() {
   }
   
-  public Simple(double a, double b) {
+  public Simple(float a, float b) {
   this.a = a;
   this.b = b;
   }
@@ -29,11 +29,11 @@ public class Simple {
     return b;
   }
   
-  public void setA(int a) {
+  public void setA(float a) {
     this.a = a;
   }
   
-  public void setB(int b) {
+  public void setB(float b) {
     this.b = b;
   }
   
@@ -41,3 +41,6 @@ public class Simple {
     return String.format("(a:%d, b:%d)", a, b);
   }
 }
+
+
+
