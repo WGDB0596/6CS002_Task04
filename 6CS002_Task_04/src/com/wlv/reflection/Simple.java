@@ -41,3 +41,4 @@ public class Simple {
     return String.format("(Base:%d, Height:%d)", b, h);
   }
 }
+
