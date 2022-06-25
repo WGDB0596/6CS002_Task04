@@ -15,7 +15,6 @@ public class KUnit {
 		}
 		checks.add(String.format("%04d: %s", checksMade++, txt));
 	}
-	
 	public static void checkEquals(double value1, double value2) {
 		if (value1 == value2) {
 			addToReport(String.format(" %d == %d", value1, value2));
