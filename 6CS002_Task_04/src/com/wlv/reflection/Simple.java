@@ -1,46 +1,43 @@
-package com.wlv.reflection;
+package  com.wlv.reflection;
 
 public class Simple {
 
-  public float a =  (float) 16.25;
-  public float b = (float) 25.75;
+  public double b = 15.5;
+  public double h = 8.25;
   
   public Simple() {
   }
   
-  public Simple(float a, float b) {
-  this.a = a;
+  public Simple(double b, double h) {
   this.b = b;
+  this.h = h;
   }
 
-  public void rectangleA() {
-    this.a *= this.a;
-  }
-  
-  public void rectangleB() {
+  public void traingleB() {
     this.b *= this.b;
   }
   
-  public double getA() {
-    return a;
+  public void traingleH() {
+    this.h *= this.h;
   }
-
+  
   public double getB() {
     return b;
   }
-  
-  public void setA(float a) {
-    this.a = a;
+
+  public double getH() {
+    return h;
   }
   
-  public void setB(float b) {
+  public void setB(double b) {
     this.b = b;
   }
   
+  public void setH(double h) {
+    this.h = h;
+  }
+  
   public String toString() {
-    return String.format("(a:%d, b:%d)", a, b);
+    return String.format("(Base:%d, Height:%d)", b, h);
   }
 }
-
-
-

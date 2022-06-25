@@ -8,17 +8,24 @@ public class reflection_8 {
     Simple s = new Simple();
     Field [] fields = s.getClass().getDeclaredFields();
     System.out.printf("There are %d fields\n", fields.length);
-    for(Field f : fields) {
-      f.setAccessible(true);
-      double x = f.getFloat(s);
-      x++;
-      f.setFloat(s, (float) x);
-      System.out.printf("field name=%s type=%s value=%d\n", 
-          f.getName(), f.getType(), f.getFloat(s));
+    for(Field f : fields) { 
+    	f.setAccessible(true);
+    	double x = f.getDouble(s);
+    	x++;
+    	f.setDouble(s, x);
+    	System.out.println("Variable name : "+f.getName());
+    	System.out.println("Datatypes of the variable :"+f.getType());
+    	
+    	
+    	System.out.print("Access Modifiers of the variable : "+f.toString());
+    	System.out.println("Value of the variable : "+f.get(fields));
+    	System.out.println();
+    	System.out.println("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *") ;
           
     }
   }
 
 }
+
 
 

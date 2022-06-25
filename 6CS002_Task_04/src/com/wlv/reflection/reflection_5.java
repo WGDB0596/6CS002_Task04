@@ -19,7 +19,7 @@ public class reflection_5 {
     
     for(Field f : fields) {
       System.out.printf("field name=%s type=%s value=%d\n", 
-          f.getName(), f.getType(), f.getFloat(s));
+          f.getName(), f.getType(), f.getDouble(s));
       
     }
   }
